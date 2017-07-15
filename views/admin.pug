@@ -1,0 +1,37 @@
+extends layout.pug
+
+block append head
+	script System.import('app/admin.js');
+
+block append body
+	.container
+		.row
+			.col-12
+				h1 Current round
+				p Participant 1: 
+					strong#current-name1
+				p Participant 2: 
+					strong#current-name2
+				p Time: 
+					strong#current-time
+			.btn-group
+				button#current-start.btn.btn-primary(type='button') Start timer
+				button#current-pause.btn.btn-default(type='button') Pause timer
+				button#current-reset.btn.btn-default(type='button') Reset timer
+				
+		.row
+			.col-12
+				h1 New round
+				form#new-form
+					.form-group
+						label(for="new-name1") Participant 1
+						input#new-name1.form-control(type='text')
+					.form-group
+						label(for="new-name2") Participant 2
+						input#new-name2.form-control(type='text')
+					.form-group
+						label(for="new-duration") Duration (in minutes)
+						input#new-duration.form-control(type='number',value=25)
+					.btn-group
+						button#new-submit.btn.btn-primary(type='submit') Submit
+						button.btn.btn-default(type='reset') Reset

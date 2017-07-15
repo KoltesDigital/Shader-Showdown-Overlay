@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "shader-showdown-overlay",
+  "version": "1.0.0",
+  "description": "Countdown timer and participant names overlay for OBS.",
+  "license": "MIT",
+  "main": "app.js",
+  "dependencies": {
+    "bunyan": "^1.8.10",
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.2",
+    "socket.io": "^2.0.3",
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "jspm": "^0.16.53"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "static"
+    },
+    "dependencies": {
+      "bootstrap": "github:twbs/bootstrap@^3.3.7",
+      "css": "github:systemjs/plugin-css@^0.1.35"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

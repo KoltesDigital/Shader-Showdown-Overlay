@@ -1,0 +1,29 @@
+body {
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.text {
+	font-size: 100vh;
+	font-family: Arial;
+	color: white;
+	-webkit-text-stroke: 2px black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#left.text {
+	text-align: left;
+}
+
+#center.text {
+	text-align: center;
+}
+
+#right.text {
+	text-align: right;
+}
